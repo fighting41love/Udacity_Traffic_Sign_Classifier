@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+**Traffic Sign Recognition** 
 ---
 
 **Build a Traffic Sign Recognition Project**
@@ -11,18 +11,6 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
----
 
 Here is a link to my [project code](https://github.com/fighting41love/Udacity_Traffic_Sign_Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
@@ -148,11 +136,11 @@ If a well known architecture was chosen:
 ####7. Choose nine German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 **Re:** Here are five German traffic signs that I found on the web. All the images are high resolution. To feed these five images to our LeNet model, we first resize the image into (32,32,3). The pre-process of the images is similar to the training data.
-![Yield](http://upload-images.jianshu.io/upload_images/2528310-cbb216b6759e09a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
-![General danger](http://upload-images.jianshu.io/upload_images/2528310-36c171a44c48779a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
-![Priority road	](http://upload-images.jianshu.io/upload_images/2528310-d1e8332f4ac51049.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
-![Turn right](http://upload-images.jianshu.io/upload_images/2528310-742eca4dcfb0e3f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
-![Stop Sign](http://upload-images.jianshu.io/upload_images/2528310-52bb04b910401388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+![Yield](http://upload-images.jianshu.io/upload_images/2528310-cbb216b6759e09a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+![General danger](http://upload-images.jianshu.io/upload_images/2528310-36c171a44c48779a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+![Priority road	](http://upload-images.jianshu.io/upload_images/2528310-d1e8332f4ac51049.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+![Turn right](http://upload-images.jianshu.io/upload_images/2528310-742eca4dcfb0e3f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+![Stop Sign](http://upload-images.jianshu.io/upload_images/2528310-52bb04b910401388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
 
 In my opinion, all the traffic signs in the images are very easy to identify. However, the experimental results are not the situation that we imagined.
 
