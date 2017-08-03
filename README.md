@@ -35,7 +35,7 @@ Image data shape = (32, 32,3)
 
 **Re:** First, we draw all the classes in the following figure. There are 43 classes in all. As shown in the figure, some images are too dark to figure out the detail of the sign. It's necessary to preprocess the image into grayscale.
 
-![All classes](http://upload-images.jianshu.io/upload_images/2528310-0cdf5c73e457c5b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![All classes](http://upload-images.jianshu.io/upload_images/2528310-0cdf5c73e457c5b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "This a short caption (alt text)")
 
 Here is an exploratory visualization of the data set. It is a bar chart showing distributions of all the classes in train, validation and test data. We can see that the distributions in the three parts are similar. 
 
