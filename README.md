@@ -197,6 +197,7 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 10. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 **Re:** The feature maps learn many high level features from the images. For instance, the shape of the sign, and the edges of numbers on the sign.
+
 Convolution layer1:
 > ![Convolution layer1](http://upload-images.jianshu.io/upload_images/2528310-481c393668229d84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
