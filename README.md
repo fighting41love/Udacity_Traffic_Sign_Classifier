@@ -44,12 +44,14 @@ All classes:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing distributions of all the classes in train, validation and test data. We can see that the distributions in the three parts are similar. 
 
-![Distribution of classes in train data.](http://upload-images.jianshu.io/upload_images/2528310-cdc03f67cec4ab0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+Distribution of classes in train data：
+> ![Distribution of classes in train data.](http://upload-images.jianshu.io/upload_images/2528310-cdc03f67cec4ab0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+Distribution of classes in validation data:
+> ![Distribution of classes in validation data.](http://upload-images.jianshu.io/upload_images/2528310-dde4b0abe530cf99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![Distribution of classes in validation data.](http://upload-images.jianshu.io/upload_images/2528310-dde4b0abe530cf99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![Distribution of classes in train data.](http://upload-images.jianshu.io/upload_images/2528310-d03b1da7774e95f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+Distribution of classes in test data:
+> ![Distribution of classes in test data.](http://upload-images.jianshu.io/upload_images/2528310-d03b1da7774e95f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ###Design and Test a Model Architecture
 
@@ -59,8 +61,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-
-![Grayscale: before and after](http://upload-images.jianshu.io/upload_images/2528310-5c548c3c7d6d5d11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![Grayscale: before and after](http://upload-images.jianshu.io/upload_images/2528310-5c548c3c7d6d5d11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 The codes are as follows:
 ```
@@ -87,7 +88,7 @@ X_valid_normalized = (X_valid - 128)/128
 The difference between the original data set and the normalized data set is as follows. We cannot tell the difference by looking at the images.
 
 
-![Normalized image.](http://upload-images.jianshu.io/upload_images/2528310-c8b15f645894d1ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+> ![Normalized image.](http://upload-images.jianshu.io/upload_images/2528310-c8b15f645894d1ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
 
 #### 4. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
@@ -145,11 +146,20 @@ If a well known architecture was chosen:
 #### 7. Choose nine German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 **Re:** Here are five German traffic signs that I found on the web. All the images are high resolution. To feed these five images to our LeNet model, we first resize the image into (32,32,3). The pre-process of the images is similar to the training data.
-![Yield](http://upload-images.jianshu.io/upload_images/2528310-cbb216b6759e09a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
-![General danger](http://upload-images.jianshu.io/upload_images/2528310-36c171a44c48779a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
-![Priority road	](http://upload-images.jianshu.io/upload_images/2528310-d1e8332f4ac51049.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
-![Turn right](http://upload-images.jianshu.io/upload_images/2528310-742eca4dcfb0e3f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
-![Stop Sign](http://upload-images.jianshu.io/upload_images/2528310-52bb04b910401388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+Yeild:
+> ![Yield](http://upload-images.jianshu.io/upload_images/2528310-cbb216b6759e09a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+
+General danger:
+> ![General danger](http://upload-images.jianshu.io/upload_images/2528310-36c171a44c48779a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+
+prioritt road: 
+> ![Priority road	](http://upload-images.jianshu.io/upload_images/2528310-d1e8332f4ac51049.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+
+Turn right:
+> ![Turn right](http://upload-images.jianshu.io/upload_images/2528310-742eca4dcfb0e3f0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
+
+Stop sign:
+> ![Stop sign](http://upload-images.jianshu.io/upload_images/2528310-52bb04b910401388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
 
 In my opinion, all the traffic signs in the images are very easy to identify. However, the experimental results are not the situation that we imagined.
 
@@ -187,10 +197,20 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 10. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 **Re:** The feature maps learn many high level features from the images. For instance, the shape of the sign, and the edges of numbers on the sign.
+Convolution layer1:
+> ![Convolution layer1](http://upload-images.jianshu.io/upload_images/2528310-481c393668229d84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![Convolution layer1](http://upload-images.jianshu.io/upload_images/2528310-481c393668229d84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Convolution relu1](http://upload-images.jianshu.io/upload_images/2528310-5afcb0e127ffe8c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Convolution maxpool1](http://upload-images.jianshu.io/upload_images/2528310-c55f8a138044c2a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Convolution layer2](http://upload-images.jianshu.io/upload_images/2528310-3b4aac994522e932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Convolution relu2](http://upload-images.jianshu.io/upload_images/2528310-33fa1993c88a92c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Convolution maxpool2](http://upload-images.jianshu.io/upload_images/2528310-0eb8ce547596f88f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+Convolution relu1:
+> ![Convolution relu1](http://upload-images.jianshu.io/upload_images/2528310-5afcb0e127ffe8c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Convolution maxpool1:
+> ![Convolution maxpool1](http://upload-images.jianshu.io/upload_images/2528310-c55f8a138044c2a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Convolution layer2:
+> ![Convolution layer2](http://upload-images.jianshu.io/upload_images/2528310-3b4aac994522e932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Convolution relu2:
+> ![Convolution relu2](http://upload-images.jianshu.io/upload_images/2528310-33fa1993c88a92c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+onvolution maxpool2:
+> ![Convolution maxpool2](http://upload-images.jianshu.io/upload_images/2528310-0eb8ce547596f88f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
