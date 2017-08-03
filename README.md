@@ -16,7 +16,7 @@ Here is a link to my [project code](https://github.com/fighting41love/Udacity_Tr
 
 ###Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 **Re:** I used the python, numpy and matplotlib library to calculate summary statistics of the traffic signs data set:
 
@@ -31,7 +31,7 @@ Image data shape = (32, 32,3)
 * The number of unique classes/labels in the data set is ?
 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 **Re:** First, we draw all the classes in the following figure. There are 43 classes in all. As shown in the figure, some images are too dark to figure out the detail of the sign. It's necessary to preprocess the image into grayscale.
 
@@ -48,7 +48,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ###Design and Test a Model Architecture
 
-####3. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. 
+#### 3. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. 
 
 **Re:** As a first step, I decided to convert the images to grayscale. On the one hand, the color information is not very useful. On the other hand, the gray image has only one channel, which greatly reduces the computation.
 
@@ -85,7 +85,7 @@ The difference between the original data set and the normalized data set is as f
 ![Normalized image.](http://upload-images.jianshu.io/upload_images/2528310-c8b15f645894d1ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
 
-####4. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 4. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 **Re:** My final model is based on **LeNet architecture**. To improve the performance, we add one more dense layer. The overall model consists of the following layers:
 
@@ -106,11 +106,11 @@ The difference between the original data set and the normalized data set is as f
 | Softmax				|  outputs 43      									
 
 
-####5. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 5. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 **Re:** To train the model, I used an Adam optimizer with learning rate 0.001. Learning rate 0.01 is too large, the CNN cannot learn anything from the data. Learning rate 0.0001 is too small, which consumes much time in training. The batch size is set to 128. Larger batch size costs much time. The number of epochs is 100. Actually, the model converges about after 35 epochs.
 
-####6. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. 
+#### 6. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. 
 
 My final model results were:
 * training set accuracy of ? 
@@ -133,7 +133,11 @@ If a well known architecture was chosen:
 
 ###Test a Model on New Images
 
-####7. Choose nine German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+
+
+
+
+#### 7. Choose nine German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 **Re:** Here are five German traffic signs that I found on the web. All the images are high resolution. To feed these five images to our LeNet model, we first resize the image into (32,32,3). The pre-process of the images is similar to the training data.
 ![Yield](http://upload-images.jianshu.io/upload_images/2528310-cbb216b6759e09a3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/150)
@@ -144,7 +148,7 @@ If a well known architecture was chosen:
 
 In my opinion, all the traffic signs in the images are very easy to identify. However, the experimental results are not the situation that we imagined.
 
-####8. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 8. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
@@ -159,7 +163,7 @@ Here are the results of the prediction:
 
 **Re:** The model was able to correctly guess 0 of the 5 traffic signs, which gives an accuracy of 0%. The problem is that the data is too small, i.e., the resolution of the image is only 32×32. The model may perform well on larger images. We didn't use augmentation technique. In addition, the LeNet is not robust. In other words, the convolutional neural network is not robust against noises and simple tansformations. Yan Lecun published a paper that demonstrate that the neural network cannot identify some traffic signs after they take a photo and feed the photo into CNN. Hence, they proposed the adversarial training method to make the model robust.  It's a very hot topic recently. In the future, we can also try the adversarial training method to improve the performance.
 
-####9. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
+#### 9. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 
 **Re:** The code for making predictions on my final model is located in the 60th cell of the Ipython notebook.
 
@@ -176,7 +180,7 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####10. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+#### 10. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 **Re:** The feature maps learn many high level features from the images. For instance, the shape of the sign, and the edges of numbers on the sign.
 
 ![Convolution layer1](http://upload-images.jianshu.io/upload_images/2528310-481c393668229d84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
