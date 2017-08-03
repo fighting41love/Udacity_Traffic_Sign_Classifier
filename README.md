@@ -21,15 +21,19 @@ Here is a link to my [project code](https://github.com/fighting41love/Udacity_Tr
 **Re:** I used the python, numpy and matplotlib library to calculate summary statistics of the traffic signs data set:
 
 * The size of training set is ?
-34799 (Is it a large enough dataset? I'm not sure. The traffic signs in different weather, brightness condition are totally different. Image augmentation is good choice to solve the brightness problem. I wonder the whether we should collect a larger dataset.)
+**Re:** 34799 (Is it a large enough dataset? I'm not sure. The traffic signs in different weather, brightness condition are totally different. Image augmentation is good choice to solve the brightness problem. I wonder the whether we should collect a larger dataset.)
+
 * The size of the validation set is ?
-4410
+**Re:** 4410
+
 * The size of test set is ?
-12630
+**Re:** 12630
+
 * The shape of a traffic sign image is ?
-Image data shape = (32, 32,3)
+**Re:** Image data shape = (32, 32,3)
+
 * The number of unique classes/labels in the data set is ?
-{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}
+**Re:** {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}
 
 #### 2. Include an exploratory visualization of the dataset.
 
