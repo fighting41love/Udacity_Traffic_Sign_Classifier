@@ -88,7 +88,7 @@ X_valid_normalized = (X_valid - 128)/128
 The difference between the original data set and the normalized data set is as follows. We cannot tell the difference by looking at the images.
 
 
-> ![Normalized image.](http://upload-images.jianshu.io/upload_images/2528310-c8b15f645894d1ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+> ![Normalized image.](http://upload-images.jianshu.io/upload_images/2528310-c530cadf6036ac74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
 
 #### 4. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
